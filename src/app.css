@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat",sans-serif;
+  /* cursor: none; */
+}
+@font-face {
+  font-family: "DeathStar";
+  src: url("../src/assets/DeathStar-VmWB.ttf");
+}
+:root{
+  --baseColor:rgb(255 176 1);
+  /* #ffb001 */
+  --textColorLight : whitesmoke;
+  --textColorLight2 : rgb(194, 188, 188);
+  --textColorDark: rgb(25, 24, 24);
+  --textColorDark2: rgb(47, 45, 45);
+}
+body{
+  background-color: var(--baseColor);
+  overflow-x: hidden;
+}
+#app{
+  overflow-x: hidden !important;
+}
+.swiper-pagination{
+  display: none !important;
+}
+.swiper-button-prev,.swiper-button-next{
+  color: var(--textColorLight) !important;
+}
+.swiper-button-prev::after,.swiper-button-next::after{
+    font-size: 1em !important;
+    font-weight: bolder;
+}
+.swiper-wrapper{
+  transition-timing-function : linear;
+}
